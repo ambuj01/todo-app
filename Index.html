@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body onload="loadTasks()">
+
+    <div class="container">
+        
+        <div class="toggle-wrapper">
+            <label class="switch">
+              <input type="checkbox" id="mode-toggle" onchange="toggleMode()">
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+        <h2>To-Do List</h2>
+
+        <div class="input-container">
+          <input type="text" id="task-input" placeholder="Add a new task...">
+          <button onclick="addtask()">Add</button>
+        </div>
+
+        <ul id="task-list"></ul>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
